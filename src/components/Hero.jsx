@@ -275,9 +275,11 @@ function Hero() {
               >
                 <FolderOpen size={16} /> View Projects
               </button>
-              <button className="btn-outline">
-                <Download size={16} /> Download Resume
-              </button>
+              <a href="../public/My CV.pdf" download="Mazoor_Ahmad_Resume.pdf">
+                <button className="btn-outline">
+                  <Download size={16} /> Download Resume
+                </button>
+              </a>
             </div>
 
             {/* Social Icons */}

@@ -7,19 +7,22 @@ const CONTACT_INFO = [
   {
     icon: <Mail size={20} />,
     label: "Email",
-    value: "manzoor@example.com",
+    value: "manzoorahmadm293@gmail.com",
+    href:"https://mail.google.com/mail/u/0/#inbox",
     color: "#22d3ee",
   },
   {
     icon: <Linkedin size={20} />,
     label: "LinkedIn",
     value: "linkedin.com/in/manzoor",
+    href: "https://www.linkedin.com/in/manzoor-ahmad-b776a2269/",
     color: "#a78bfa",
   },
   {
     icon: <Github size={20} />,
     label: "GitHub",
     value: "github.com/manzoor",
+    href: "https://github.com/manzoor293",
     color: "#34d399",
   },
   {
@@ -129,8 +132,10 @@ function Contact() {
             }}
           >
             {CONTACT_INFO.map((c) => (
-              <div
+              <a
                 key={c.label}
+                href={c.href}
+                target="_blank"
                 style={{
                   display: "flex",
                   gap: 16,
@@ -189,7 +194,7 @@ function Contact() {
                     {c.value}
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
