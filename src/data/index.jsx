@@ -11,7 +11,6 @@ export const SKILLS = [
   { name: "Node.js", icon: "🟢", level: 80 },
   { name: "Next.js", icon: "▲", level: 78 },
   { name: "MongoDB", icon: "🍃", level: 75 },
-  { name: "Flutter", icon: "💙", level: 65 },
 ];
 
 export const TECH_BADGES = [
@@ -25,11 +24,10 @@ export const TECH_BADGES = [
   "Next.js",
   "Node.js",
   "Express.js",
-  "MongoDB",
   "REST API",
   "Git/GitHub",
-  "Flutter",
-  "Firebase",
+  "MongoDB",
+  "Supabase",
   "Vercel",
 ];
 
