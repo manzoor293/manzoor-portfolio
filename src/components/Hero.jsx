@@ -49,8 +49,10 @@ function Hero() {
         40,
       );
     } else if (deleting && typed.length === 0) {
-      setDeleting(false);
-      setTIdx((i) => (i + 1) % TITLES.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setTIdx((i) => (i + 1) % TITLES.length);
+      }, 0);
     }
 
     return () => clearTimeout(timeout);
@@ -158,6 +160,7 @@ function Hero() {
         }}
       >
         <div
+          className="hero-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "1fr auto",
@@ -166,7 +169,7 @@ function Hero() {
           }}
         >
           {/* ── Left: Text ── */}
-          <div>
+          <div className="hero-copy">
             {/* Available badge */}
             <div
               style={{
@@ -181,8 +184,8 @@ function Hero() {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 8,
-                  background: "rgba(34,211,238,0.08)",
-                  border: "1px solid rgba(34,211,238,0.2)",
+                  background: "var(--surface)",
+                  border: "1px solid var(--border)",
                   borderRadius: 50,
                   padding: "6px 16px",
                   fontSize: "0.75rem",
@@ -294,9 +297,21 @@ function Hero() {
               }}
             >
               {[
-                { icon: <Github size={18} />, href: "#", label: "GitHub" },
-                { icon: <Linkedin size={18} />, href: "#", label: "LinkedIn" },
-                { icon: <Mail size={18} />, href: "#", label: "Email" },
+                {
+                  icon: <Github size={18} />,
+                  href: "https://github.com/manzoor293",
+                  label: "GitHub",
+                },
+                {
+                  icon: <Linkedin size={18} />,
+                  href: "https://www.linkedin.com/in/manzoor-ahmad-b776a2269/",
+                  label: "LinkedIn",
+                },
+                {
+                  icon: <Mail size={18} />,
+                  href: "https://mail.google.com/mail/?view=cm&fs=1&to=manzoorahmadm293@gmail.com",
+                  label: "Email",
+                },
               ].map((s) => (
                 <a
                   key={s.label}
@@ -348,7 +363,7 @@ function Hero() {
 
           {/* ── Right: Avatar Orb ── */}
           <div
-            className="hero-avatar"
+            className="hero-avatar hero-visual"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -413,7 +428,7 @@ function Hero() {
                     filter: "drop-shadow(0 0 20px rgba(34,211,238,0.5))",
                   }}
                 >
-                  👨‍💻
+                  <img src="/manzoor.jpg" alt="Manzoor Ahmad" />
                 </span>
               </div>
 
@@ -466,10 +481,11 @@ function Hero() {
             display: "grid",
             gridTemplateColumns: "repeat(3,1fr)",
             gap: 1,
-            background: "var(--border)",
+            background: "var(--card)",
             borderRadius: 16,
             overflow: "hidden",
             border: "1px solid var(--border)",
+            boxShadow: "var(--soft-shadow)",
             animation: "reveal-up 0.7s ease forwards",
             animationDelay: "0.8s",
             opacity: 0,
@@ -485,7 +501,7 @@ function Hero() {
               style={{
                 padding: "20px",
                 textAlign: "center",
-                background: "var(--bg2)",
+                background: "var(--surface)",
               }}
             >
               <div

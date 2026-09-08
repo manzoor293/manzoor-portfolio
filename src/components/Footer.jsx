@@ -1,10 +1,15 @@
-import { Mail } from "lucide-react";
-// import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const SOCIAL_ICONS = [
-  // { icon: <Github size={16} />, href: "#" },
-  // { icon: <Linkedin size={16} />, href: "#" },
-  { icon: <Mail size={16} />, href: "#" },
+  { icon: <Github size={16} />, href: "https://github.com/manzoor293" },
+  {
+    icon: <Linkedin size={16} />,
+    href: "https://www.linkedin.com/in/manzoor-ahmad-b776a2269/",
+  },
+  {
+    icon: <Mail size={16} />,
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=manzoorahmadm293@gmail.com",
+  },
 ];
 
 const QUICK_LINKS = ["Home", "About", "Projects", "Services", "Contact"];

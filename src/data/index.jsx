@@ -33,31 +33,13 @@ export const TECH_BADGES = [
 
 export const PROJECTS = [
   {
-    title: "AI-Powered Job Portal",
-    desc: "Intelligent job matching platform with AI recommendations, resume parsing, and real-time notifications. Built with Next.js, Node.js and MongoDB.",
-    tags: ["Next.js", "Node.js", "MongoDB", "AI/ML", "REST API"],
-    color: "#22d3ee",
-    icon: "🤖",
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "AR Navigation App",
-    desc: "Augmented Reality indoor navigation system using MERN stack with WebAR integration for real-time spatial guidance.",
-    tags: ["React", "Node.js", "MongoDB", "AR.js", "Three.js"],
-    color: "#a78bfa",
-    icon: "🧭",
-    github: "#",
-    demo: "#",
-  },
-  {
     title: "E-Commerce Platform",
     desc: "Full-featured online store with cart, payment gateway, admin panel, inventory management and order tracking.",
     tags: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
     color: "#fbbf24",
     icon: "🛒",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/manzoor293/E-COMMERCE",
+    demo: "https://e-commerce-gules-omega-84.vercel.app/",
   },
   {
     title: "Developer Portfolio",
@@ -65,9 +47,27 @@ export const PROJECTS = [
     tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
     color: "#34d399",
     icon: "💼",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/manzoor293/manzoor-portfolio",
+    demo: "https://manzoor-portfolio.vercel.app/",
   },
+  // {
+  //   title: "AI-Powered Job Portal",
+  //   desc: "Intelligent job matching platform with AI recommendations, resume parsing, and real-time notifications. Built with Next.js, Node.js and MongoDB.",
+  //   tags: ["Next.js", "Node.js", "MongoDB", "AI/ML", "REST API"],
+  //   color: "#22d3ee",
+  //   icon: "🤖",
+  //   github: "#",
+  //   demo: "#",
+  // },
+  // {
+  //   title: "AR Navigation App",
+  //   desc: "Augmented Reality indoor navigation system using MERN stack with WebAR integration for real-time spatial guidance.",
+  //   tags: ["React", "Node.js", "MongoDB", "AR.js", "Three.js"],
+  //   color: "#a78bfa",
+  //   icon: "🧭",
+  //   github: "#",
+  //   demo: "#",
+  // },
 ];
 
 export const SERVICES = [

@@ -35,9 +35,10 @@ function Navbar({ dark, toggleDark, activeSection }) {
           zIndex: 100,
           padding: scrolled ? "12px 0" : "20px 0",
           transition: "all 0.3s",
-          background: scrolled ? "rgba(7,7,15,0.88)" : "transparent",
+          background: scrolled ? "var(--nav-bg)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
           borderBottom: scrolled ? "1px solid var(--border)" : "none",
+          boxShadow: scrolled ? "var(--soft-shadow)" : "none",
         }}
       >
         <div
@@ -142,8 +143,9 @@ function Navbar({ dark, toggleDark, activeSection }) {
             left: 0,
             right: 0,
             zIndex: 99,
-            background: "var(--bg2)",
+            background: "var(--nav-bg)",
             borderBottom: "1px solid var(--border)",
+            boxShadow: "var(--soft-shadow)",
             padding: "20px 24px",
             display: "flex",
             flexDirection: "column",

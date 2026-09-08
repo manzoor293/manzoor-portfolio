@@ -7,9 +7,6 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-// import useIntersection from "./hooks/useIntersection";
-// import index from "./data/index.js";
-// import globals from "./styles/globals.css";
 
 const SECTIONS = ["home", "about", "projects", "services", "contact"];
 
@@ -37,7 +34,15 @@ function App() {
 
   return (
     // Apply 'light' class to root to activate light-mode CSS variables
-    <div className={dark ? "" : "light"} style={{ minHeight: "100vh" }}>
+    <div
+      className={dark ? "" : "light"}
+      style={{
+        minHeight: "100vh",
+        background: "var(--bg)",
+        color: "var(--text)",
+        transition: "background 0.25s ease, color 0.25s ease",
+      }}
+    >
       <Navbar
         dark={dark}
         toggleDark={() => setDark((d) => !d)}
