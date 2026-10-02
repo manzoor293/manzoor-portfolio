@@ -252,12 +252,17 @@ function Hero() {
                 opacity: 0,
               }}
             >
-              I craft{" "}
+              I'm a full-stack developer based in Mardan, Pakistan, with a BS in
+              Computer Science from UET Mardan.{" "}
               <strong style={{ color: "var(--text)" }}>
-                scalable, performant web applications
-              </strong>{" "}
-              that solve real problems. Passionate about clean code, intuitive
-              UX, and pushing the boundaries of modern web technologies.
+                I work mainly with React, Node.js, Express, and MongoDB, and
+                I've also built projects with Electron, SQLite, and
+                Supabase.{" "}
+              </strong>
+              For my final-year project I built an AR-based billboard platform
+              end to end, and I delivered a desktop sales and inventory system
+              to a local tyre shop. I'm looking for an Associate Software
+              Engineer role where I can keep learning on a real team.
             </p>
 
             {/* CTA Buttons */}
@@ -278,7 +283,7 @@ function Hero() {
               >
                 <FolderOpen size={16} /> View Projects
               </button>
-              <a href="../public/My CV.pdf" download="Mazoor_Ahmad_Resume.pdf">
+              <a href="/Manzoor_Ahmad_CV_Updated.pdf" download>
                 <button className="btn-outline">
                   <Download size={16} /> Download Resume
                 </button>
