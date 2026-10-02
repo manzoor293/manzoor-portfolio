@@ -141,8 +141,8 @@ function Projects() {
                       gap: 6,
                       padding: "7px 14px",
                       borderRadius: 8,
-                      background: "rgba(7,7,15,0.9)",
-                      color: "white",
+                      background: "white",
+                      color: "rgba(7,7,15,0.9)",
                       fontSize: "0.75rem",
                       fontFamily: "'Syne',sans-serif",
                       fontWeight: 700,
@@ -152,24 +152,26 @@ function Projects() {
                   >
                     <Github size={13} /> Code
                   </a>
-                  <a
-                    href={project.demo}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 6,
-                      padding: "7px 14px",
-                      borderRadius: 8,
-                      background: project.color,
-                      color: "#07070f",
-                      fontSize: "0.75rem",
-                      fontFamily: "'Syne',sans-serif",
-                      fontWeight: 700,
-                      textDecoration: "none",
-                    }}
-                  >
-                    <ExternalLink size={13} /> Demo
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 6,
+                        padding: "7px 14px",
+                        borderRadius: 8,
+                        background: project.color,
+                        color: "#07070f",
+                        fontSize: "0.75rem",
+                        fontFamily: "'Syne',sans-serif",
+                        fontWeight: 700,
+                        textDecoration: "none",
+                      }}
+                    >
+                      <ExternalLink size={13} /> Demo
+                    </a>
+                  )}
                 </div>
               </div>
 
